@@ -27,7 +27,7 @@ const Footer = () => {
             mesmo: "text-blue-400",
           }}
         />
-        <a href="mailto:nelsonmodenezjunior05@gmail.com?subject=Assunto&body=Mensagem" target="_blank">
+        <a href="https://wa.me/5519998027684" target="_blank">
           <ShimmerButton
             title="Entre em contato"
             icon={<FaLocationArrow />}

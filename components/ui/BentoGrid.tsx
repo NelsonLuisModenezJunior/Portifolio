@@ -156,7 +156,7 @@ export const BentoGridItem = ({
               </div>
               </a>
               <ShimmerButton
-                title={'Pega meu Email!'}
+                title={'Salva meu WhatsApp!'}
                 icon={<IoCopyOutline />}
                 position="left"
                 outrasClasses="`!bg-[#161a31]`"
