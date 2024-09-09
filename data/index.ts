@@ -85,7 +85,7 @@ export const projects = [
     des: "Um app mobile React Native desenvolvido para calcular e registrar uma lista de IMC para manutenção do progresso do usuário e permitir seu compartilhamento.",
     img: "/Fit.png",
     iconLists: ["/react.svg", "/css.png", "/js.png", "/expo.png"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://github.com/NelsonLuisModenezJunior/React-Native/tree/main/imc",
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ export const projects = [
       "/python.png",
       "/tail.png",
     ],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://github.com/NelsonLuisModenezJunior/React/tree/main/React/ToDo",
   },
   {
     id: 4,
@@ -107,7 +107,7 @@ export const projects = [
     des: "Recriei a tela de login do Instagram para testar um framework CSS de estilização",
     img: "/Instagram.png",
     iconLists: ["/html.png", "/tail.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://github.com/NelsonLuisModenezJunior/Tailwind/tree/main/projetos/instagram",
   },
 ];
 

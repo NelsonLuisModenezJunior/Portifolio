@@ -45,7 +45,7 @@ const Footer = () => {
               className="sm:mt-4 md:mt-2 w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
               key={perfil.id}
             >
-              <a href={perfil.link}>
+              <a href={perfil.link} target="_blank">
                 <img src={perfil.img} alt={perfil.id} width={30} height={30} />
               </a>
             </div>
