@@ -50,8 +50,9 @@ export const BentoGridItem = ({
   const [copiado, setCopiado] = useState(false)
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('nelsonmodenezjunior05@gmail.com');
-
+    const phoneNumber = '5519998027684';
+    const url = `https://wa.me/${phoneNumber}`;
+    window.open(url, '_blank');
     setCopiado(true);
   }
 
@@ -157,7 +158,7 @@ export const BentoGridItem = ({
                 }} />
               </div>
               <ShimmerButton
-                title={copiado ? 'Email copiado': 'Pega meu Email'}
+                title={copiado ? 'Email copiado': 'Salva meu WhatsApp'}
                 icon={<IoCopyOutline />}
                 position="left"
                 outrasClasses="`!bg-[#161a31]`"

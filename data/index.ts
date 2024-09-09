@@ -76,7 +76,7 @@ export const projects = [
     title: "Controle do Parque Computacional da SAR | UNICAMP",
     des: "Este projeto busca otimizar e gerenciar de forma centralizada e automatizada os recursos computacionais da universidade, com foco no monitoramento, alocação e uso eficiente desses recursos.",
     img: "/TelaProjetoIntegrador.png",
-    iconLists: ["/vue.png", "/html.png", "/css.png", "/js.png", "/graphQL.png"],
+    iconLists: ["/vue.png", "/html.png", "/css.png", "/js.png", "/GraphQL.png"],
     link: "https://github.com/NelsonLuisModenezJunior/projeto-integrador",
   },
   {
@@ -104,7 +104,7 @@ export const projects = [
   {
     id: 4,
     title: "Tela de Login do Instagram",
-    des: "Recriei a tela de login do Instagram para testar um framework CSS para estilização",
+    des: "Recriei a tela de login do Instagram para testar um framework CSS de estilização",
     img: "/Instagram.png",
     iconLists: ["/html.png", "/tail.svg"],
     link: "https://github.com/adrianhajdin/iphone",
@@ -170,4 +170,5 @@ export const quadrolg = [
   "/js.png",
   "/python.png",
   "/php.png",
+  "/GraphQL.png"
 ];
