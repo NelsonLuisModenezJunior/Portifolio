@@ -157,6 +157,7 @@ export const BentoGridItem = ({
                   }
                 }} />
               </div>
+              <a href="https://wa.me/5519998027684" target="_blank">
               <ShimmerButton
                 title={copiado ? 'Email copiado': 'Salva meu WhatsApp'}
                 icon={<IoCopyOutline />}
@@ -164,6 +165,7 @@ export const BentoGridItem = ({
                 outrasClasses="`!bg-[#161a31]`"
                 handleClick={handleCopy}
               />
+              </a>
             </div>
           )}
         </div>
