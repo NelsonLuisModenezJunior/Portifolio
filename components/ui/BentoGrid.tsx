@@ -50,9 +50,6 @@ export const BentoGridItem = ({
   const [copiado, setCopiado] = useState(false)
 
   const handleCopy = () => {
-    const phoneNumber = '5519998027684';
-    const url = `https://wa.me/${phoneNumber}`;
-    window.open(url, '_blank');
     setCopiado(true);
   }
 
@@ -146,8 +143,8 @@ export const BentoGridItem = ({
 
           {id === 6 &&(
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0`}
-              >
+              <a href="https://wa.me/5519998027684" target="_blank">
+              <div className={`absolute -bottom-5 right-0`}>
                 <Lottie options={{
                   loop: copiado,
                   autoplay: copiado,
@@ -157,16 +154,14 @@ export const BentoGridItem = ({
                   }
                 }} />
               </div>
-              <a href="https://wa.me/5519998027684" target="_blank">
+              </a>
               <ShimmerButton
-                title={copiado ? 'Email copiado': 'Salva meu WhatsApp'}
+                title={'Pega meu Email!'}
                 icon={<IoCopyOutline />}
                 position="left"
                 outrasClasses="`!bg-[#161a31]`"
-                handleClick={handleCopy}
               />
-              </a>
-            </div>
+            </div>  
           )}
         </div>
       </div>
