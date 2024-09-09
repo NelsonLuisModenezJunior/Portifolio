@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
@@ -7,7 +7,7 @@ import { useState } from "react";
 import Lottie from "react-lottie";
 import animationData from "@/data/confetti.json";
 import ShimmerButton from "./ShimmerButton";
-import { IoCopyOutline } from "react-icons/io5";
+import { FaWhatsapp } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -47,11 +47,11 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const [copiado, setCopiado] = useState(false)
+  const [copiado, setCopiado] = useState(false);
 
   const handleCopy = () => {
     setCopiado(true);
-  }
+  };
 
   return (
     <div
@@ -65,8 +65,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(2,0,36,1) 6%, rgba(65,65,254,1) 33%, rgba(102,113,115,1) 100%)",
       }}
     >
-      <div
-        className={`${id === 6 && 'flex justify-center'} h-full`}>
+      <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -108,60 +107,58 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-        {id === 2 && <GlobeDemo />}
+          {id === 2 && <GlobeDemo />}
 
-        {id === 3 && (
-          <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-            <div className="flex flex-col gap-3 lg:gap-8">
-              {["React.js", "Next.js", "TypeScript"].map(
-                (item) =>
-                  (
-                    <span
-                      key="item"
-                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                  <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]"/>
+          {id === 3 && (
+            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+              <div className="flex flex-col gap-3 lg:gap-8">
+                {["React.js", "Next.js", "TypeScript"].map((item) => (
+                  <span
+                    key="item"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
               </div>
               <div className="flex flex-col gap-3 lg:gap-8">
-              <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]"/>
-              {["JavaScript", "Angular.js", "Python"].map(
-                (item) =>
-                  (
-                    <span
-                      key="item"
-                      className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
-                    >
-                      {item}
-                    </span>
-                  ))}
+                <span className="py-4 px-3 rounded-lg text-center bg-[#10132E]" />
+                {["JavaScript", "Angular.js", "Python"].map((item) => (
+                  <span
+                    key="item"
+                    className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
           )}
 
-          {id === 6 &&(
+          {id === 6 && (
             <div className="mt-5 relative">
               <a href="https://wa.me/5519998027684" target="_blank">
-              <div className={`absolute -bottom-5 right-0`}>
-                <Lottie options={{
-                  loop: copiado,
-                  autoplay: copiado,
-                  animationData,
-                  rendererSettings: {
-                  preserveAspectRatio: 'xMidYMid slice',
-                  }
-                }} />
-              </div>
+                <div className={`absolute -bottom-5 right-0`}>
+                  <Lottie
+                    options={{
+                      loop: copiado,
+                      autoplay: copiado,
+                      animationData,
+                      rendererSettings: {
+                        preserveAspectRatio: "xMidYMid slice",
+                      },
+                    }}
+                  />
+                </div>
               </a>
               <ShimmerButton
-                title={'Salva meu WhatsApp!'}
-                icon={<IoCopyOutline />}
+                title={"Salva meu número!"}
+                icon={<FaWhatsapp />}
                 position="left"
                 outrasClasses="`!bg-[#161a31]`"
               />
-            </div>  
+            </div>
           )}
         </div>
       </div>
